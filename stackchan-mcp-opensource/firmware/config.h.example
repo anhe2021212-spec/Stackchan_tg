@@ -1,0 +1,51 @@
+// config.h.example
+// Copy this file to firmware/src/config.h and fill in your values.
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// --- Network (connection priority order) ---
+#define WIFI_NETWORK_COUNT 2
+
+// WiFi 0: Home network
+#define WIFI_SSID_0           "your-ssid"
+#define WIFI_PASSWORD_0       "your-password"
+#define SERVER_URL_0          "http://192.168.1.100:5060"
+#define VOICE_UPLOAD_URL_0    "http://192.168.1.100:5061/voice/upload"
+
+// WiFi 1: Mobile hotspot (fallback)
+#define WIFI_SSID_1           "your-hotspot"
+#define WIFI_PASSWORD_1       "your-hotspot-password"
+#define SERVER_URL_1          "http://172.20.10.1:5060"
+#define VOICE_UPLOAD_URL_1    "http://172.20.10.1:5061/voice/upload"
+
+// --- Speaker ---
+#define SPEAKER_VOLUME  200
+
+// --- Microphone (PTT recording) ---
+#define MIC_SAMPLE_RATE           16000
+#define MIC_MAX_RECORD_SECONDS    8
+#define MIC_TRIGGER_RMS           0.005f
+#define MIC_TRIGGER_HOLD_MS       200
+#define MIC_SILENCE_RMS           0.0015f
+#define MIC_SILENCE_HOLD_MS       1500
+#define MIC_FRAME_SAMPLES         1600
+#define MIC_MIN_VALID_SAMPLES     5200
+#define MIC_VOICE_CONFIRM_RMS     0.0025f
+#define PRE_TRIGGER_BUFFER_SAMPLES 4800
+#define MIC_MAGNIFICATION         4
+#define MIC_NOISE_FILTER_LEVEL    0
+
+// --- Display ---
+#define DISPLAY_BRIGHTNESS  70
+
+// --- HTTP Timeouts (ms) ---
+#define HTTP_TIMEOUT_SHORT  3000
+#define HTTP_TIMEOUT_STT    15000
+#define HTTP_TIMEOUT_CHAT   30000
+#define HTTP_TIMEOUT_VOICE  60000
+
+// --- Notification Polling ---
+#define NOTIFICATION_CHECK_INTERVAL 5000
+
+#endif
