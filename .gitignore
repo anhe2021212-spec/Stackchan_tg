@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+dist/
+build/
+*.egg-info/
+
+# Local environment and secrets
+.env
+.env.local
+firmware/src/config.h
+
+# IDE
+.vscode/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+firmware/.pio/
+firmware/.vscode/
+compile_commands.json
+firmware/compile_commands.json
+
+# Other assistant configuration
+CLAUDE.md
+**/CLAUDE.md
+
+# Generated local artifacts
+*.log
+*.tmp
+*.bak

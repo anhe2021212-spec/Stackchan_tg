@@ -1,0 +1,35 @@
+[project]
+name = "stackchan-tools"
+version = "0.1.0"
+description = "Host-side tooling for the Stack-chan voice avatar."
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.10",
+    "requests>=2.31",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+    "firmware/.pio",
+    "mcp-server/__pycache__",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = [
+    "E501",
+]
+

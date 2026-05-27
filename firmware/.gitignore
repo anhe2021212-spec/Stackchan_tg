@@ -1,0 +1,10 @@
+# 個人情報
+config.h
+
+# macOS
+.DS_Store
+
+# PlatformIO 
+.pio/
+
+.vscode/
