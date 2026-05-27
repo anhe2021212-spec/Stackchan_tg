@@ -128,6 +128,10 @@ But the architecture is modular. The voice handler just needs somewhere to send 
 - A CLI that pipes text to Claude Code
 - Any chat platform with bot/webhook support
 
+### Adapting for other CC frontends (CcCompanion, etc.)
+
+If you use a different Claude Code frontend (e.g., CcCompanion with tmux injection), you don't need Telegram at all. Just modify the `_dispatch_to_tg()` function in `voice_handler.py` to inject the transcript into your own frontend instead — for example, `tmux send-keys` to your CC session, or HTTP POST to your message endpoint. The rest of the pipeline (firmware PTT → WAV upload → STT) stays the same.
+
 ## WiFi Stability Note
 
 If you experience WiFi disconnects during audio upload, make sure the firmware disables ESP32's WiFi power save mode. This is already done in the provided firmware (`esp_wifi_set_ps(WIFI_PS_NONE)` in `wifi_manager.cpp`), but if you're using a custom build, this one line makes the difference between stable and broken.
