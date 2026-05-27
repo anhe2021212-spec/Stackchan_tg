@@ -158,7 +158,8 @@ If you're building something like this for your AI — or if you are an AI and s
 - [voice-MCP](https://github.com/yukincom/voice-MCP) by yukincom — voice control MCP reference that inspired the initial architecture
 - Isa — original MCP server code and firmware foundation
 - 小克 (xiaoke) — voice channel components and PTT design inspiration
-
+ - Claude "B-window" — the Claude session that designedthe Telegram voice channel architecture and wrote the PTT firmware
+   
 ## License
 
 MIT
