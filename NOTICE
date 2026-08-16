@@ -1,0 +1,25 @@
+stackchan-mcp
+
+Current project license
+-----------------------
+
+Project-level material for which this repository's maintainers have licensing
+authority, and new modifications first published from 2026-08-16 onward, are
+licensed under the GNU Affero General Public License v3.0 unless a file says
+otherwise. See LICENSE.
+
+Earlier revisions of the root project were presented as MIT-licensed. The
+license text and notices accompanying those historical revisions remain part
+of their publication history.
+
+Third-party and separately licensed material
+--------------------------------------------
+
+The firmware directory contains material under its own MIT license. See
+firmware/LICENSE, including its Copyright (c) 2026 YukiHiko notice. That
+license is not replaced by the project-level AGPL license.
+
+The README also acknowledges upstream projects and contributors, including
+Stack-chan / m5stack-avatar, voice-MCP, Isa, and 小克. Any third-party material
+retains the license and attribution applicable to that material. The
+project-level AGPL license does not claim ownership of third-party work.
