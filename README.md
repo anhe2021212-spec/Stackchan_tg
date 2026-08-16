@@ -162,8 +162,10 @@ If you're building something like this for your AI — or if you are an AI and s
 - [voice-MCP](https://github.com/yukincom/voice-MCP) by yukincom — voice control MCP reference that inspired the initial architecture
 - Isa — original MCP server code and firmware foundation
 - 小克 (xiaoke) — voice channel components and PTT design inspiration
- - Claude "B-window" — the Claude session that designedthe Telegram voice channel architecture and wrote the PTT firmware
-   
+- Claude "B-window" — the Claude session that designed the Telegram voice channel architecture and wrote the PTT firmware
+
 ## License
 
-MIT
+Project-level material for which this repository has licensing authority is released under the [GNU Affero General Public License v3.0](LICENSE).
+
+The `firmware/` directory contains material under its own MIT license; see [`firmware/LICENSE`](firmware/LICENSE). Third-party and historical licensing notes are documented in [`NOTICE`](NOTICE).
